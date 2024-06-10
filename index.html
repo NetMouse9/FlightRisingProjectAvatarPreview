@@ -1,28 +1,20 @@
 <input type="text" id="address" placeholder="Enter outfit URL here: "> 
-<input type="button" id="magic" value="Go!">
-<img id="origin" src="https://www1.flightrising.com/dgen/dressing-room/dragon?did=63158483&skin=0&apparel=10369,10963,50788,817,34617,37393,45179&xt=dressing.png" alt="Hi there :3">
+<button onclick="chchchchchchanges()">Go!</button>
+<img id="origin" class="responsive" src="https://www1.flightrising.com/dgen/dressing-room/dragon?did=63158483&skin=0&apparel=10369,10963,50788,817,34617,37393,45179&xt=dressing.png" alt="Hi there :3">
 <br><img id="head1m" src="https://i.ibb.co/QM0P9JT/h1m.png" alt="Mannequin1m">
 
 
 <script>
-  const address = document.getElementById('address');
-  const magic = document.getElementById('magic');
   
-  var origin = document.getElementById('origin');
-  
-  var head1m = document.getElementById('head1m');
-  
-});
+  function chchchchchchanges() {
+    const address = document.getElementById('address');
+    var origin = document.getElementById('origin');
+    img.src = address.value;
 
-  function func() {
-    something should happen here
-
+    var head1m = document.getElementById('head1m');
+    head1m.src = address.value;
 
   }
 
-  magic.addEventListener('click',func);
   
 </script>
-
-
-*Thank you, Ralph Phillips from Six Minutes. Smarter., for the youtube video guide: https://www.youtube.com/watch?v=aEj0Wu33hJM.
