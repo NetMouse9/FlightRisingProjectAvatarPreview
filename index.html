@@ -7,4 +7,18 @@
   <br>(sample: https://www1.flightrising.com/dressing/outfit/2593826)
 </form> 
 
+<canvas id="picture" width="350" height="350"><canvas>
+  <script>
+    var canvas = document.getElementById("picture");
+    var context = canvas.getContext('2d');
+    var image = new Image();
+
+    image.onload = function(){
+      context.drawImage(image, 0,0);
+      
+    };
+
+    image.src = 1;
+    
+  </script>
 
