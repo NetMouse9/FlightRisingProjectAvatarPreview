@@ -1,17 +1,24 @@
-<input type="text" id="address" placeholder="Enter outfit URL here :3"> 
+<input type="text" id="address" placeholder="Enter outfit URL here: "> 
 <input type="button" id="magic" value="Go!">
-<img class="image" id="origin">
-<p class="output" id="heads"></p>
+<img id="origin" src="https://www1.flightrising.com/dgen/dressing-room/dragon?did=63158483&skin=0&apparel=10369,10963,50788,817,34617,37393,45179&xt=dressing.png" alt="Hi there :3">
+<br><img id="head1m" src="https://i.ibb.co/QM0P9JT/h1m.png" alt="Mannequin1m">
 
 
 <script>
   const address = document.getElementById('address');
   const magic = document.getElementById('magic');
-  const origin = document.getElementById('origin');
-  const heads = document.getElementById('heads');
+  
+  var origin = document.getElementById('origin');
+  
+  var head1m = document.getElementById('head1m');
+  
+});
 
   function func() {
-    origin.innerHTML = src="address.value" alt="original outfit goes here";
+    
+    origin.changeImageSrc(address.value);
+    head1m.changeImageSrc(address.value);
+
   }
 
   magic.addEventListener('click',func);
