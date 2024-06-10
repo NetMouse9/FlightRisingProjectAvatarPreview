@@ -1,5 +1,19 @@
 <input type="text" id="address" placeholder="Enter outfit URL here :3"> 
-<input type="button" value="Go!">
+<input type="button" id="magic" value="Go!">
+<p class="output" id="origin"></p>
+<p class="output" id="heads"></p>
+
+
 <script>
+  const address = document.getElementById('address');
+  const magic = document.getElementById('magic');
+  const origin = document.getElementById('origin');
+  const heads = document.getElementById('heads');
+
+  function func() {
+    origin.innerHTML = address.value;
+  }
+
+  magic.addEventListener('click',func);
   
 </script>
