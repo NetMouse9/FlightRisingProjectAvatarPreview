@@ -1,6 +1,6 @@
 <h1>Hello</h1>
 
-<form action="/action_page.php">
+<form action="/action_page.php" onsubmit="showingImg()">>
   Enter your outfit's URL here: 
   <input type="outfit" id="1">
   <input type="submit">
@@ -9,16 +9,11 @@
 
 <canvas id="picture" width="350" height="350"><canvas>
   <script>
-    var canvas = document.getElementById("picture");
-    var context = canvas.getContext('2d');
-    var image = new Image();
-
-    image.onload = function(){
-      context.drawImage(image, 0,0);
+    function showingImg(){
+      <img src="1">;
       
     };
 
-    image.src = 1;
     
   </script>
 
