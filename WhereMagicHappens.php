@@ -1,4 +1,4 @@
 <php>
-  $outfitURL = $_POST['outfitURL];
+  $outfitURL = $['outfitURL];
   print "this was the outfit: $outfitURL"'
 </php>
