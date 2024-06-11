@@ -1,7 +1,8 @@
 
 
-<br> version y (all initial pictures should work, but the after is still not functioning.)
-<br> Using arcane flag for fast checking: https://www1.flightrising.com/static/layout/revamp/banners/arcane_small.png
+<br> Version u (all initial pictures work. Now figuring out how to crop the dummies)
+<br> Using dummy for fast checking: https://www1.flightrising.com/dgen/dressing-room/<span style="color:red">dummy?breed=14&gender=0</span>&skin=0&apparel=10369,10963,50788,817,34617,37393,45179&xt=dressing.png
+<br> Later will need to figure out how to turn "dragon" into "dummy" : https://www1.flightrising.com/dgen/dressing-room/<span style="color:red">dragon?did=63158483</span>&skin=0&apparel=10369,10963,50788,817,34617,37393,45179&xt=dressing.png
 
 <br><input type="text" id="address" placeholder="Enter outfit URL here: " value=""> 
 
@@ -44,16 +45,40 @@
 <img id="head15m" src="https://i.ibb.co/QM86bmD/h15m.png" alt="Mannequin15m">
 <img id="head15f" src="https://i.ibb.co/gSFbSCX/h15f.png" alt="Mannequin15f">
 
+
+
 <script>
   
   function chchchchchchanges() {
     
-    var address = document.getElementById('address');
+    var address = document.getElementById('address'); // gets the url from the user
     
-    var origin = document.getElementById('origin');
-    origin.src = address.value + '';
+    var origin = document.getElementById('origin'); // points to origin in main
+    origin.src = address.value + ''; // changes the src value to the url from user
+    
+    
 
-    var head1m = document.getElementById('head1m');
+    
+    // testing on male 1
+    // var head1m = document.getElementById('head1m');
+    // head1m.src = address.value + '';
+    
+    .new_male_1 { // creating a new class type named new_male_1 
+      height: 75px;
+      width: 75px;
+      background-image: url(address.value + ''); /* The image used */
+      background-color: #cccccc; /* Used if the image is unavailable */
+      background-position: 10% 50%; /* x,y */
+      background-repeat: no-repeat; /* Do not repeat the image */
+    }
+
+    <div class
+
+
+    
+
+
+    
     var head1f = document.getElementById('head1f');
     var head2m = document.getElementById('head2m');
     var head2f = document.getElementById('head2f');
@@ -84,7 +109,8 @@
     var head15m = document.getElementById('head15m');
     var head15f = document.getElementById('head15f');
     
-    head1m.src = address.value + '';
+    
+
     head1f.src = address.value + '';
     head2m.src = address.value + '';
     head2f.src = address.value + '';
