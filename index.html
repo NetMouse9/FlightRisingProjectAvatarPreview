@@ -1,4 +1,4 @@
-<br> version w
+<br> version e
 <br><input type="text" id="address" placeholder="Enter outfit URL here: "> 
 <br><button onclick="chchchchchchanges()">Go!</button>
 <br><img id="origin" class="responsive" src="https://www1.flightrising.com/dgen/dressing-room/dragon?did=63158483&skin=0&apparel=10369,10963,50788,817,34617,37393,45179&xt=dressing.png" alt="Hi there :3">
@@ -8,9 +8,11 @@
 <script>
   
   function chchchchchchanges() {
-    const address = document.getElementById('address');
+    
+    var address = document.getElementById('address');
+    
     var origin = document.getElementById('origin');
-    img.src = address.value + '';
+    origin.src = address.value + '';
 
     var head1m = document.getElementById('head1m');
     head1m.src = address.value + '';
