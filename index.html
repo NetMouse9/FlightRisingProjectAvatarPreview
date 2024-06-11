@@ -1,8 +1,28 @@
+<style>
 
+.new_male_1 { // creating a new class type named new_male_1 
+      height: 75px;
+      width: 75px;
+      background-image: url(address.value + ''); /* The image used */
+      background-color: #cccccc; /* Used if the image is unavailable */
+      background-position: 10% 50%; /* x,y */
+      background-repeat: no-repeat; /* Do not repeat the image */
+    }
 
-<br> Version u (all initial pictures work. Now figuring out how to crop the dummies)
-<br> Using dummy for fast checking: https://www1.flightrising.com/dgen/dressing-room/<span style="color:red">dummy?breed=14&gender=0</span>&skin=0&apparel=10369,10963,50788,817,34617,37393,45179&xt=dressing.png
-<br> Later will need to figure out how to turn "dragon" into "dummy" : https://www1.flightrising.com/dgen/dressing-room/<span style="color:red">dragon?did=63158483</span>&skin=0&apparel=10369,10963,50788,817,34617,37393,45179&xt=dressing.png
+.new_female_1 { // creating a new class type named new_female_1 
+      height: 75px;
+      width: 75px;
+      background-image: url(address.value + ''); /* The image used */
+      background-color: #cccccc; /* Used if the image is unavailable */
+      background-position: 20% 60%; /* x,y */
+      background-repeat: no-repeat; /* Do not repeat the image */
+    }
+
+</style>
+
+<br> Version i (all initial pictures work. Now figuring out how to crop the dummies)
+<br><br> Using dummy for fast checking:<br>https://www1.flightrising.com/dgen/dressing-room/<span style="color:red">dummy?breed=14&gender=0</span>&skin=0&apparel=10369,10963,50788,817,34617,37393,45179&xt=dressing.png
+<br><br> Later will need to figure out how to turn "dragon" into "dummy" :<br>https://www1.flightrising.com/dgen/dressing-room/<span style="color:red">dragon?did=63158483</span>&skin=0&apparel=10369,10963,50788,817,34617,37393,45179&xt=dressing.png
 
 <br><input type="text" id="address" placeholder="Enter outfit URL here: " value=""> 
 
@@ -10,7 +30,7 @@
 
 <br><img id="origin" class="responsive" src="https://www1.flightrising.com/dgen/dressing-room/dragon?did=63158483&skin=0&apparel=10369,10963,50788,817,34617,37393,45179&xt=dressing.png" alt="Hi there :3">
 
-<br><img id="head1m" src="https://i.ibb.co/QM0P9JT/h1m.png" alt="Mannequin1m">
+<br><img id="head1m" src="https://i.ibb.co/QM0P9JT/h1m.png" alt="Mannequin1m" >
 <img id="head1f" src="https://i.ibb.co/vkfYhzy/h1f.png" alt="Mannequin1f">
 <img id="head2m" src="https://i.ibb.co/Dr5gdvK/h2m.png" alt="Mannequin2m">
 <img id="head2f" src="https://i.ibb.co/RgJ8NY9/h2f.png" alt="Mannequin2f">
@@ -60,23 +80,10 @@
 
     
     // testing on male 1
-    // var head1m = document.getElementById('head1m');
+    var head1m = document.getElementById('head1m');
     // head1m.src = address.value + '';
-    
-    .new_male_1 { // creating a new class type named new_male_1 
-      height: 75px;
-      width: 75px;
-      background-image: url(address.value + ''); /* The image used */
-      background-color: #cccccc; /* Used if the image is unavailable */
-      background-position: 10% 50%; /* x,y */
-      background-repeat: no-repeat; /* Do not repeat the image */
-    }
-
-    // <div class
-
-
-    
-
+    head1m.style.display = "none";
+    <div class="new_male_1"></div>
 
     
     var head1f = document.getElementById('head1f');
