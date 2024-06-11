@@ -1,6 +1,7 @@
 <style>
 
 .new_male_1 { // creating a new class type named new_male_1 
+      opacity: 0.3;
       height: 75px;
       width: 75px;
       background-image: url(address.value + ''); /* The image used */
@@ -20,7 +21,7 @@
 
 </style>
 
-<br> Version a (all initial pictures work. Now figuring out how to crop the dummies)
+<br> Version s (all initial pictures work. Now figuring out how to crop the dummies)
 <br><br> Using dummy for fast checking:<br>https://www1.flightrising.com/dgen/dressing-room/<span style="color:red">dummy?breed=14&gender=0</span>&skin=0&apparel=10369,10963,50788,817,34617,37393,45179&xt=dressing.png
 <br><br> Later will need to figure out how to turn "dragon" into "dummy" :<br>https://www1.flightrising.com/dgen/dressing-room/<span style="color:red">dragon?did=63158483</span>&skin=0&apparel=10369,10963,50788,817,34617,37393,45179&xt=dressing.png
 
@@ -83,10 +84,12 @@
     var head1m = document.getElementById('head1m');
     // head1m.src = address.value + '';
     document.getElementById('head1m').className = "new_male_1";
-
-
-    
+      
+    // testing on female 1 to compare to male 1
     var head1f = document.getElementById('head1f');
+    // head1f.src = address.value + '';
+    document.getElementById('head1f').className = "new_female_1";
+    
     var head2m = document.getElementById('head2m');
     var head2f = document.getElementById('head2f');
     var head3m = document.getElementById('head3m');
@@ -118,7 +121,7 @@
     
     
 
-    head1f.src = address.value + '';
+    
     head2m.src = address.value + '';
     head2f.src = address.value + '';
     head3m.src = address.value + '';
