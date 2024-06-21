@@ -1,5 +1,5 @@
 <center>
-<br> Version 1.009
+<br> Version 1.010
       <br>
 <br>(Now figuring out how to change to the dummies (how to crop dummies will follow))
 <br><br> Using dummy for fast checking:<br>https://www1.flightrising.com/dgen/dressing-room/<span style="color:red">dummy?breed=14&gender=0</span>&skin=0&apparel=10369,10963,50788,817,34617,37393,45179&xt=dressing.png
@@ -8,7 +8,7 @@
 <br><br><input type="text" id="address" placeholder="Enter outfit URL here: " value=""> 
 
 <br><br><button onclick="changeImgH1M()">Still testing : starting on no.1 Male</button>
-<br><br><button onclick="chchchchchchanges()">Show me my outfit</button> <t><button onclick="randomize()">Randomize!</button>
+<br><button onclick="randomize()">Randomize! (Not started here yet)</button>
 <br><div id="allHeads"></div>
 
 
@@ -83,94 +83,6 @@
                   document.getElementById("allHeads").appendChild(img);
       	}
       }
-  }
-      
-  
-  function chchchchchchanges() {
-    
-    var address = document.getElementById('address'); // gets the url from the user
-    
-    var origin = document.getElementById('origin'); // points to origin in main
-    origin.src = address.value + ''; // changes the src value to the url from user
-    
-    
-
-    
-    // testing on male 1
-    var head1m = document.getElementById('head1m');
-    // head1m.src = address.value + '';
-    document.getElementById('head1m').className = "new_male_1";
-    document.getElementById('head1m').style.backgroundColor='red'; /* The image used */  
-      
-    // testing on female 1 to compare to male 1
-    var head1f = document.getElementById('head1f');
-    // head1f.src = address.value + '';
-    document.getElementById('head1f').className = "new_female_1";
-    // background-image: url(address.value + ''); /* The image used */  
-
-        
-    var head2m = document.getElementById('head2m');
-    var head2f = document.getElementById('head2f');
-    var head3m = document.getElementById('head3m');
-    var head3f = document.getElementById('head3f');
-    var head4m = document.getElementById('head4m');
-    var head4f = document.getElementById('head4f');
-    var head5m = document.getElementById('head5m');
-    var head5f = document.getElementById('head5f');
-    var head6m = document.getElementById('head6m');
-    var head6f = document.getElementById('head6f');
-    var head7m = document.getElementById('head7m');
-    var head7f = document.getElementById('head7f');
-    var head8m = document.getElementById('head8m');
-    var head8f = document.getElementById('head8f');
-    var head9m = document.getElementById('head9m');
-    var head9f = document.getElementById('head9f');
-    var head10m = document.getElementById('head10m');
-    var head10f = document.getElementById('head10f');
-    var head11m = document.getElementById('head11m');
-    var head11f = document.getElementById('head11f');
-    var head12m = document.getElementById('head12m');
-    var head12f = document.getElementById('head12f');
-    var head13m = document.getElementById('head13m');
-    var head13f = document.getElementById('head13f');
-    var head14m = document.getElementById('head14m');
-    var head14f = document.getElementById('head14f');
-    var head15m = document.getElementById('head15m');
-    var head15f = document.getElementById('head15f');
-    
-    
-
-    
-    head2m.src = address.value + '';
-    head2f.src = address.value + '';
-    head3m.src = address.value + '';
-    head3f.src = address.value + '';
-    head4m.src = address.value + '';
-    head4f.src = address.value + '';
-    head5m.src = address.value + '';
-    head5f.src = address.value + '';
-    head6m.src = address.value + '';
-    head6f.src = address.value + '';
-    head7m.src = address.value + '';
-    head7f.src = address.value + '';
-    head8m.src = address.value + '';
-    head8f.src = address.value + '';
-    head9m.src = address.value + '';
-    head9f.src = address.value + '';
-    head10m.src = address.value + '';
-    head10f.src = address.value + '';
-    head11m.src = address.value + '';
-    head11f.src = address.value + '';
-    head12m.src = address.value + '';
-    head12f.src = address.value + '';
-    head13m.src = address.value + '';
-    head13f.src = address.value + '';
-    head14m.src = address.value + '';
-    head14f.src = address.value + '';
-    head15m.src = address.value + '';
-    head15f.src = address.value + '';
-    
-
   }
 
 </script>
