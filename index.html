@@ -1,5 +1,5 @@
 <center>
-<br> Version 1.012
+<br> Version 1.013
       <br>
 <br>(Now figuring out how to change to the dummies (how to crop dummies will follow))
 <br><br> Using dummy for fast checking:<br>https://www1.flightrising.com/dgen/dressing-room/<span style="color:red">dummy?breed=14&gender=0</span>&skin=0&apparel=10369,10963,50788,817,34617,37393,45179&xt=dressing.png
@@ -9,8 +9,6 @@
 
 <br><br><button onclick="changeImgH1M()">Still testing : starting on no.1 Male</button>
 <br><button onclick="randomize()">Randomize! (Not started here yet)</button>
-<br><div id="allHeads"></div>
-
 
 <br><img id="origin" class="responsive" src="https://www1.flightrising.com/dgen/dressing-room/dragon?did=63158483&skin=0&apparel=10369,10963,50788,817,34617,37393,45179&xt=dressing.png" alt="Hi there :3">
 
@@ -70,21 +68,7 @@
       }
       var str2 = urlTillBreedEquals + urlBreedSecondDigitMaybe + urlFromAfterBreedToEnd;
 
-      for (let i = 1; i < 17; i++) {
-      	for (let j = 0; j < 2; j++) {
-                  var img = document.createElement('img');
-                  var sign = "'";
-                  document.write("hoho");
-                  let result = sign.concat(str2.substring(0,61));
-                  result = result.concat(i);
-                  result = result.concat(str2.substring(61,73));
-                  result = result.concat(j);
-                  result = result.concat(str2.substring(74,str2.length));
-                  result = result.concat(sign);
-                  img.src = result;
-                  document.getElementById("allHeads").appendChild(img);
-      	}
-      }
+      document.getElementById("head1m").src=new String("\"" + str2.substring(0,61) + 1 + str2.substring(61,73) + 0 + str2.substring(74,str2.length) + "\"");
   }
 
 </script>
