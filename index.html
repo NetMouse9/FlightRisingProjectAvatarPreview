@@ -21,7 +21,7 @@
 
 </style>
 <center>
-<br> Version 1.007
+<br> Version 1.008
       <br>
 <br>(Now figuring out how to change to the dummies (how to crop dummies will follow))
 <br><br> Using dummy for fast checking:<br>https://www1.flightrising.com/dgen/dressing-room/<span style="color:red">dummy?breed=14&gender=0</span>&skin=0&apparel=10369,10963,50788,817,34617,37393,45179&xt=dressing.png
@@ -94,7 +94,10 @@
 
       for (let i = 1; i < 17; i++) {
       	for (let j = 0; j < 2; j++) {
-          	document.getElementById("allHeads").innerHTML += "<p><img src='"+urlTillBreedEquals+i+str2.substring(61,73)+j+str2.substring(74,str2.length)"'></p>";
+                  var img = document.createElement('img');
+                  img.src = "'"+urlTillBreedEquals+i+str2.substring(61,73)+j+str2.substring(74,str2.length)+"'";
+                  document.getElementById("allHeads").appendChild(img);
+          	      // document.getElementById("allHeads").innerHTML += "<img src='"+urlTillBreedEquals+i+str2.substring(61,73)+j+str2.substring(74,str2.length)+"'>";
       	}
       }
   }
