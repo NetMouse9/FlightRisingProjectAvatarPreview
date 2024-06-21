@@ -21,9 +21,9 @@
 
 </style>
 <center>
-<br> Version 1.006
+<br> Version 1.007
       <br>
-<br>(all initial pictures work. Now figuring out how to change to the dummies (how to crop dummies will follow))
+<br>(Now figuring out how to change to the dummies (how to crop dummies will follow))
 <br><br> Using dummy for fast checking:<br>https://www1.flightrising.com/dgen/dressing-room/<span style="color:red">dummy?breed=14&gender=0</span>&skin=0&apparel=10369,10963,50788,817,34617,37393,45179&xt=dressing.png
 <br><br> Later will need to figure out how to turn "dragon" into "dummy" :<br>https://www1.flightrising.com/dgen/dressing-room/<span style="color:red">dragon?did=63158483</span>&skin=0&apparel=10369,10963,50788,817,34617,37393,45179&xt=dressing.png
 
@@ -31,7 +31,7 @@
 
 <br><br><button onclick="changeImgH1M()">Still testing : starting on no.1 Male</button>
 <br><br><button onclick="chchchchchchanges()">Show me my outfit</button> <t><button onclick="randomize()">Randomize!</button>
-
+<br><div id="allHeads"></div>
 
 
 <br><img id="origin" class="responsive" src="https://www1.flightrising.com/dgen/dressing-room/dragon?did=63158483&skin=0&apparel=10369,10963,50788,817,34617,37393,45179&xt=dressing.png" alt="Hi there :3">
@@ -79,9 +79,26 @@
 <script>
 
   function changeImgH1M() {
-        let img= document.querySelector("#head1m");
-        img.setAttribute('src',"#head10f");
-  }    
+
+      var str = document.getElementById('address').innerHTML;
+      
+      var urlTillBreedEquals = str.substring(0,61);
+      var urlBreedSecondDigitMaybe = str.substring(62,63);
+      var length = str.length;
+      var urlFromAfterBreedToEnd = str.substring(63,length);
+
+      if (urlBreedSecondDigitMaybe <10) {
+          urlBreedSecondDigitMaybe = "";
+      }
+      var str2 = urlTillBreedEquals + urlBreedSecondDigitMaybe + urlFromAfterBreedToEnd;
+
+      for (let i = 1; i < 17; i++) {
+      	for (let j = 0; j < 2; j++) {
+          	document.getElementById("allHeads").innerHTML += "<p><img src='"+urlTillBreedEquals+i+str2.substring(61,73)+j+str2.substring(74,str2.length)"'></p>";
+      	}
+      }
+  }
+      
   
   function chchchchchchanges() {
     
