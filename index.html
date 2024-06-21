@@ -21,13 +21,18 @@
 
 </style>
 
-<br> Version f (all initial pictures work. Now figuring out how to crop the dummies)
+<br> Version 1.01 (all initial pictures work. Now figuring out how to change to the dummies (how to crop dummies will follow))
 <br><br> Using dummy for fast checking:<br>https://www1.flightrising.com/dgen/dressing-room/<span style="color:red">dummy?breed=14&gender=0</span>&skin=0&apparel=10369,10963,50788,817,34617,37393,45179&xt=dressing.png
 <br><br> Later will need to figure out how to turn "dragon" into "dummy" :<br>https://www1.flightrising.com/dgen/dressing-room/<span style="color:red">dragon?did=63158483</span>&skin=0&apparel=10369,10963,50788,817,34617,37393,45179&xt=dressing.png
 
 <br><br><input type="text" id="address" placeholder="Enter outfit URL here: " value=""> 
 
-<br><br><button onclick="chchchchchchanges()">Go!</button>
+<br><br><button onclick="changeImgH1M(filename)">Still testing : starting on no.1 Male</button>
+<br><br><button onclick="chchchchchchanges(filename)">Show me my outfit</button> <t><button onclick="randomize()">Randomize!</button>
+
+// https://www1.flightrising.com/dgen/dressing-room/dummy?breed=8&gender=1&skin=0&apparel=289,15753,29224,37696,3638,27915,35545&xt=dressing.png
+
+
 <center>
 <br><img id="origin" class="responsive" src="https://www1.flightrising.com/dgen/dressing-room/dragon?did=63158483&skin=0&apparel=10369,10963,50788,817,34617,37393,45179&xt=dressing.png" alt="Hi there :3">
 
@@ -66,11 +71,19 @@
 <img id="head15m" src="https://i.ibb.co/QM86bmD/h15m.png" alt="Mannequin15m">
 <img id="head15f" src="https://i.ibb.co/gSFbSCX/h15f.png" alt="Mannequin15f">
 
+<br><img id="head16m" src="https://i.ibb.co/0Fk1Bg9/h16m.png" alt="Mannequin16m">
+<img id="head16f" src="https://i.ibb.co/mBSPHpz/h16f.png" alt="Mannequin16f">
+
 
 </center>
 <script>
+
+  function changeImgH1M(filename) {
+        let img= document.querySelector("#head1m");
+        img.setAttribute('src',filename);
+  }    
   
-  function chchchchchchanges() {
+  function chchchchchchanges(filename) {
     
     var address = document.getElementById('address'); // gets the url from the user
     
