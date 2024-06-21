@@ -1,5 +1,5 @@
 <center>
-<br> Version 1.013
+<br> Version 1.014
       <br>
 <br>(Now figuring out how to change to the dummies (how to crop dummies will follow))
 <br><br> Using dummy for fast checking:<br>https://www1.flightrising.com/dgen/dressing-room/<span style="color:red">dummy?breed=14&gender=0</span>&skin=0&apparel=10369,10963,50788,817,34617,37393,45179&xt=dressing.png
@@ -68,7 +68,9 @@
       }
       var str2 = urlTillBreedEquals + urlBreedSecondDigitMaybe + urlFromAfterBreedToEnd;
 
-      document.getElementById("head1m").src=new String("\"" + str2.substring(0,61) + 1 + str2.substring(61,73) + 0 + str2.substring(74,str2.length) + "\"");
+        // "\"" + str2.substring(0,61) + 1 + str2.substring(61,73) + 0 + str2.substring(74,str2.length) + "\""
+
+      document.getElementById("head1m").src="https://www1.flightrising.com/dgen/dressing-room/dummy?breed=1&gender=0&skin=0&apparel=10369,10963,50788,817,34617,37393,45179&xt=dressing.png";
   }
 
 </script>
