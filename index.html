@@ -27,10 +27,8 @@
 
 <br><br><input type="text" id="address" placeholder="Enter outfit URL here: " value=""> 
 
-<br><br><button onclick="changeImgH1M(filename)">Still testing : starting on no.1 Male</button>
-<br><br><button onclick="chchchchchchanges(filename)">Show me my outfit</button> <t><button onclick="randomize()">Randomize!</button>
-
-// https://www1.flightrising.com/dgen/dressing-room/dummy?breed=8&gender=1&skin=0&apparel=289,15753,29224,37696,3638,27915,35545&xt=dressing.png
+<br><br><button onclick="changeImgH1M()">Still testing : starting on no.1 Male</button>
+<br><br><button onclick="chchchchchchanges()">Show me my outfit</button> <t><button onclick="randomize()">Randomize!</button>
 
 
 <center>
@@ -78,12 +76,12 @@
 </center>
 <script>
 
-  function changeImgH1M(filename) {
+  function changeImgH1M() {
         let img= document.querySelector("#head1m");
-        img.setAttribute('src',filename);
+        img.setAttribute('src',head7f);
   }    
   
-  function chchchchchchanges(filename) {
+  function chchchchchchanges() {
     
     var address = document.getElementById('address'); // gets the url from the user
     
